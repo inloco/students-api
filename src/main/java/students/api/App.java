@@ -3,12 +3,13 @@
  */
 package students.api;
 
-public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import java.time.LocalDate;
 
+import students.api.models.Student;
+
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        final Student fulano = Student.of(1L, "fulano", LocalDate.now());
+        System.out.println(fulano);
     }
 }
