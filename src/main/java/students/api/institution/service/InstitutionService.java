@@ -13,6 +13,8 @@ public class InstitutionService {
   private final InstitutionDao dao;
 
   public long insertInstitution(Institution institution) {
+    dao.createInstitutionTable();
+    dao.createStudentsTable();
     return dao.insertInstitution(institution);
   }
 }

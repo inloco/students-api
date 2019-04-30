@@ -39,7 +39,7 @@ dependencies {
 
     implementation("org.jdbi:jdbi3-core:3.8.0")
     implementation("org.jdbi:jdbi3-sqlobject:3.8.0")
-    implementation("org.postgresql:postgresql:42.2.4")
+    implementation("com.h2database:h2:1.4.199")
 
     // This dependency is found on compile classpath of this component and consumers.
     implementation("com.google.guava:guava:27.0.1-jre")
